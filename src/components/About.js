@@ -25,9 +25,9 @@ const About = () => {
   ];
   return (
     <>
-      <div id="about" className="flex items-center justify-between my-24">
+      <div id="About" className="flex items-center justify-between my-24">
         <div className="w-[50%]">
-          <p className={`${rubik500.className} text-6xl text-[#B132A]`}>
+          <p className={`${rubik500.className} text-6xl text-[#0B132A]`}>
             Want anything to be easy with{" "}
             <span className={rubik700.className}>LaslesVPN.</span>
           </p>

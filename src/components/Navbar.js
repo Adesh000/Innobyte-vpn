@@ -18,7 +18,7 @@ const Navbar = () => {
       <ul className="flex items-center justify-between w-[40%]">
         {navLinks.map((item, index) => (
           <li className={`${rubik400.className} text-[#4F5665]`} key={index}>
-            <Link href="#about">{item}</Link>
+            <Link href={`#${item}`}>{item}</Link>
           </li>
         ))}
       </ul>
