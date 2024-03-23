@@ -7,7 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
   const navLinks = ["About", "Features", "Pricing", "Testimonials", "Help"];
   return (
-    <div className="flex items-center justify-between mt-10">
+    <div className="flex items-center justify-between mt-10 px-20">
       <div className="flex items-center justify-between">
         <Image src="/Vector.svg" width={30} height={30} alt="logo" />
         <p className={`${rubik500.className} text-xl text-[#0B132A] ml-3`}>
