@@ -2,71 +2,34 @@ import React from "react";
 import Heading from "./Heading";
 import Subheading from "./Subheading";
 import Image from "next/image";
-import { rubik400, rubik500 } from "../../assets/fonts";
-import CheckItem from "./CheckItem";
-import Button from "./Button";
 import PriceCard from "./PriceCard";
+import { PRICING_DATA } from "@/constants";
 
 const Pricing = () => {
-  const pricingData = [
-    {
-      id: 1,
-      planName: "Free Plan",
-      planFeatures: [
-        "Unlimited Bandwitch",
-        "Encrypted Connection",
-        "No Traffic Logs",
-        "Works on All Devices",
-      ],
-      planPrice: "Free",
-    },
-    {
-      id: 2,
-      planName: "Standard Plan",
-      planFeatures: [
-        "Unlimited Bandwitch",
-        "Encrypted Connection",
-        "Yes Traffic Logs",
-        "Works on All Devices",
-        "Connect Anywhere",
-      ],
-      planPrice: "$9",
-    },
-    {
-      id: 3,
-      planName: "Premium Plan",
-      planFeatures: [
-        "Unlimited Bandwitch",
-        "Encrypted Connection",
-        "Yes Traffic Logs",
-        "Works on All Devices",
-        "Connect Anywhere",
-        "Get New Features",
-      ],
-      planPrice: "$12",
-    },
-  ];
   return (
-    <div
-      id="Pricing"
-      className="flex flex-col items-center justify-center my-20"
-    >
-      <Heading text={"Choose Your Plan"} />
-      <Subheading
-        text={
-          "Let's choose the package that is best for you and explore it happily and cheerfully."
-        }
-      />
-      <div className="flex items-center justify-center">
-        {pricingData.map((item) => (
+    <div id="Pricing" className="colCenter my-20">
+      <div className="colCenter lg:w-1/2 text-center">
+        <Heading text={"Choose Your Plan"} />
+        <Subheading
+          text={
+            "Let's choose the package that is best for you and explore it happily and cheerfully."
+          }
+        />
+      </div>
+      <div className="colBetween lg:flex-row w-[85%] mt-10">
+        {PRICING_DATA.map((item) => (
           <PriceCard item={item} />
         ))}
       </div>
-      <div>
-        <Heading text="Huge Global Network of Fast VPN" />
-        <Subheading text="See LaslesVPN everywhere to make it easier for you when you move locations." />
-        <Image src="/Huge Global.svg" width={1000} height={500} alt="" />
-        <Image src="/Sponsored.svg" width={1000} height={200} alt="" />
+      <div className="mt-20">
+        <div className="colCenter mb-10">
+          <div className="lg:w-[45%] text-center">
+            <Heading text="Huge Global Network of Fast VPN" />
+            <Subheading text="See LaslesVPN everywhere to make it easier for you when you move locations." />
+          </div>
+        </div>
+        <Image src="/Huge Global.svg" width={1200} height={500} alt="" />
+        <Image src="/Sponsored.svg" width={1200} height={200} alt="" />
       </div>
     </div>
   );

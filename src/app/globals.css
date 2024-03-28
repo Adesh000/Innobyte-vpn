@@ -25,9 +25,33 @@
     )
     rgb(var(--background-start-rgb));
 } */
+/* body {
+  font-family: ;
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+  .flexBStart {
+    @apply flex items-start justify-between;
+  }
+
+  .colBetween {
+    @apply flex flex-col items-center justify-between;
+  }
+  .colCenter {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .endEven {
+    @apply flex items-end justify-evenly;
   }
 }
