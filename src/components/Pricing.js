@@ -17,8 +17,10 @@ const Pricing = () => {
         />
       </div>
       <div className="colBetween lg:flex-row w-[85%] mt-10">
-        {PRICING_DATA.map((item) => (
-          <PriceCard item={item} />
+        {PRICING_DATA.map((item, index) => (
+          <div key={index}>
+            <PriceCard item={item} />
+          </div>
         ))}
       </div>
       <div className="mt-20">

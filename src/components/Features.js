@@ -18,7 +18,9 @@ const Features = () => {
         />
         <div>
           {FEATURES.map((item, index) => (
-            <CheckItem title={item} index={index} />
+            <div key={index}>
+              <CheckItem title={item} />
+            </div>
           ))}
         </div>
       </div>

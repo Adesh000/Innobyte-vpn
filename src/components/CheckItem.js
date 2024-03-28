@@ -2,9 +2,9 @@ import React from "react";
 import { rubik400 } from "../../assets/fonts";
 import Image from "next/image";
 
-const CheckItem = ({ title, index, type }) => {
+const CheckItem = ({ title, type }) => {
   return (
-    <div className="flex items-center justify-start my-3" key={index}>
+    <div className="flex items-center justify-start my-3">
       {type === "pricing" ? (
         <Image src="/Group 1226.svg" width={25} height={25} alt="" />
       ) : (

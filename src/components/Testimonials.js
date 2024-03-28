@@ -31,7 +31,9 @@ const Testimonials = () => {
       </div>
       <div className="carousel-container flexBetween my-10 mt-20 overflow-hidden">
         {USER_PROFILES.map((user, i) => (
-          <ProfileCard user={user} index={i} />
+          <div key={i}>
+            <ProfileCard user={user} />
+          </div>
         ))}
       </div>
       <div className="flexBetween">

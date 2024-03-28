@@ -44,9 +44,8 @@ const Footer = () => {
               {item.title}
             </p>
             {item.links.map((link, i) => (
-              <Link href="/">
+              <Link href="/" key={i}>
                 <p
-                  key={i}
                   className={`${rubik400.className} text-textGrey text-base mb-3`}
                 >
                   {link}

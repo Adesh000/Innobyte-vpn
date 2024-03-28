@@ -17,7 +17,9 @@ const PriceCard = ({ item }) => {
         </p>
         <div className="flex flex-col items-start justify-center">
           {item?.planFeatures.map((elem, index) => (
-            <CheckItem type="pricing" title={elem} index={index} />
+            <div key={index}>
+              <CheckItem type="pricing" title={elem} />
+            </div>
           ))}
         </div>
       </div>
